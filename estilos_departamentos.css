@@ -1,0 +1,340 @@
+/* MENU NAVEGACION */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(235, 189, 137, 0.356);
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #000000;
+}
+.logo{
+    max-width: 13rem;
+    justify-content: start;
+    margin-right: 10%;
+}
+.abrir-menu,.cerrar-menu {
+    display: none;
+}
+.menu{
+    display: flex;
+    margin-left: 50px;
+}
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+    background-color: #000000; ;
+}
+.menu-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+.menus{
+    background-color: #000000; ;
+    padding: 10px 10px;
+}
+.menus:hover{
+    background-color: rgb(255, 68, 0);
+    border-radius: 8px;
+    transition: .5s;
+}
+/*DIRECCIONES*/
+/*------------------------------------------------------------*/
+
+h1 {
+    color: rgb(255, 104, 31);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 80px;
+} 
+.direcciones {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #000000; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 60px; /* Margen inferior */
+    margin-left: 250px;
+    text-align: left; /* Centrado del texto */
+    text-decoration: underline;
+    text-decoration: underline
+
+
+}
+.direcciones_T {
+    color: #ff6600; /* Color del texto */
+    font-size: 35px;
+    margin-left: 205px;
+}
+.direcciones,.direcciones_s {
+    font-size: 25px;
+    margin-left: 205px;
+}
+.maps{
+    width: 40%;
+    float: right;
+    margin-right: 5%;
+}
+.direcciones_m{
+    float: right;
+    font-size: 25px;
+    margin-right: 40px;
+    color: #ff5e00;
+    
+}
+/*DEPARTAMENTOS*/
+/*------------------------------------------------------------*/
+.departamentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(24%, 1fr)); /* Ajusta automáticamente el número de columnas */
+    gap: 30px; /* Espacio entre los elementos */
+    margin: 20px;
+    margin-left: 70px;
+    width: 90%;
+    height: 50%;
+    padding: 20px;
+    margin-top: 60px;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    background-color: rgba(243, 197, 167, 0.9); /* Black w/ opacity */
+    border-radius: 15px;
+}
+
+.departamento {
+    padding: 20px;
+    border: 1px solid #030000;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+
+.departamento:hover {
+    background-color: #ff7300;
+    box-shadow: 0 0 70px black;
+    transform: translateY(-5px);
+    color: #000000;
+}
+
+/* Estilos específicos para tamaños de departamento */
+.departamento--chico {
+    background-color: #f1f9fa;
+}
+
+.departamento--grande {
+    background-color: #bdcdf7;
+}
+
+.nombre_dpto {
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: #000000;
+}
+
+.imagen_dptos {
+    width: 100%;
+    max-height: 70%;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    margin: auto;
+}
+
+.precio {
+    list-style: none;
+    margin: 3px;
+    text-align: left;
+    font-size: 1.6em;
+}
+
+
+.ver-mas1,.ver-mas2,.ver-mas3,.ver-mas4,.ver-mas5,.ver-mas6,.ver-mas7,.ver-mas8,.ver-mas9,.ver-mas10,.ver-mas11,.ver-mas12a,.ver-mas12b,.ver-mas14,.ver-mas15,.ver-mas16,.ver-mas17,.ver-mas18,.ver-mas19,.ver-mas20,.ver-mas21,.ver-mas22,.ver-mas23,.ver-mas24 {
+    background-color: #ffa600;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agregado color a la transición */
+    /* Alineación al centro */
+    margin: 0 auto;
+    margin-top: 15px;
+    display: block;
+}
+
+.ver-mas1:hover,.ver-mas2:hover,.ver-mas3:hover,.ver-mas4:hover,.ver-mas5:hover,.ver-mas6:hover,.ver-mas7:hover,.ver-mas8:hover,.ver-mas9:hover,.ver-mas10:hover,.ver-mas11:hover,.ver-mas12a:hover,.ver-mas12b:hover,.ver-mas14:hover,.ver-mas15:hover,.ver-mas16:hover,.ver-mas17:hover,.ver-mas18:hover,.ver-mas19:hover,.ver-mas20:hover,.ver-mas21:hover,.ver-mas22:hover,.ver-mas23:hover,.ver-mas24:hover {
+    background-color: #ffffff;
+    color: #000000; /* Cambiado a color negro */
+    /* Animación */
+    transform: scale(1.1);
+}
+
+.iconos {
+    cursor: pointer;
+}
+/*------------------------------------------------------------*/
+
+footer {
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 1px; /* Espaciado interno */
+    justify-content: center;
+    
+}
+.yo {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    transition: color 0.3s; /* Transición suave del color del enlace */
+}
+
+.yo:hover {
+    color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+}
+@keyframes aparecer {
+    from{
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 550px) { 
+    
+    .abrir-menu{
+        display: block;
+        border:0px;
+        background-color: #ff5e00;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 1px 10px;
+        align-items: end;
+        margin-left: 40px;
+        color: #000000;
+    }
+    .cerrar-menu{
+        padding: 5px 20px;
+        display: block;
+        font-size: 30px;
+        border:0px;
+        background-color: #ff5e00;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 35px;
+        color: #000000;
+
+    }
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        border-radius: 15px;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(112, 107, 96, 0.5);
+        z-index: 2;
+    }
+    .menus{
+        background-color: #ff5f03; ;
+        border-radius: 8px;
+        padding: 5 5;
+    } 
+
+    .menu.visible{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list{
+        flex-direction: column;
+        align-items: start;
+        color: #fff;
+    }
+    .menu-list li a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #fff;
+        text-shadow:0 0 45px #000000;
+    }
+    h1 {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+    .direcciones_T {
+        font-size: 20px;
+        margin-left: 80px;
+    }
+    .direcciones_s {
+        font-size: 20px;
+        margin-left: 30px;
+        text-decoration: underline;
+    }
+
+    .maps{
+        width: 75%;
+        float:unset;
+        margin-left: 12%;
+        border-color: #000000;
+    }
+    .direcciones_m{
+        display: none;
+    }
+    .direcciones {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .departamentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        width: 83%;
+        height: 50%;
+    }
+    .departamento {
+        width: calc(90% - 10px); /* Se resta el margen */
+    }
+    .precio {
+        font-size: 110%;
+    }
+    button {
+        margin-top: 30px;
+    }
+    footer {
+        margin-top: 90px;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #333; /* Color de fondo del footer */
+        color: #fff; /* Color del texto */
+        padding: 15px; /* Espaciado interno */
+        justify-content: center;
+        
+    }
+    .yo {
+        color: #fff; /* Color del enlace */
+        text-decoration: none; /* Eliminar el subrayado del enlace */
+        transition: color 0.3s; /* Transición suave del color del enlace */
+    }
+    
+    .yo:hover {
+        color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+    }
+    }

@@ -1,0 +1,437 @@
+/* MENU NAVEGACION */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(235, 189, 137, 0.356);
+    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #000000;
+}
+.logo{
+    max-width: 13rem;
+    justify-content: start;
+    margin-right: 10%;
+}
+.abrir-menu,.cerrar-menu {
+    display: none;
+}
+.menu{
+    display: flex;
+    margin-left: 50px;
+}
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+    background-color: #000000; ;
+}
+.menu-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+.menus{
+    background-color: #000000; ;
+    padding: 10px 10px;
+}
+.menus:hover{
+    background-color: rgb(255, 68, 0);
+    border-radius: 8px;
+    transition: .5s;
+}
+/*------------------------------------------------------------*/
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+.maps{
+    margin-top:45px ;
+    width:600px;
+    height:500px;
+    border: 0;
+}
+
+/* Contact Form Styling */
+.container {
+	padding: 0 50px 70px;
+}
+.textcenter {
+	text-align: center;
+}
+.section1 {
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.section1 .shtext {
+	display: block;
+	margin-top: 20px;
+}
+
+
+.section1 h1 {
+	font-size: 55px;
+	color: #ff6600;
+	font-weight: normal;
+    text-decoration: underline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section2 {
+    width: 1200px;
+    margin: 25px auto;
+}
+.section2 .col2 {
+	width: 48.71%;
+}
+.section2 .col2.first {
+	float: left;
+}
+.section2 .col2.last {
+	float: right;
+}
+.section2 .col2.column2 {
+	padding: 0 30px;
+}
+.section2 span.collig {
+	color: #000000;
+	margin-right: 10px;
+	display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+.section2 .sec2addr {
+	display: block;
+	line-height: 26px;
+}
+.section2 .sec2addr p:first-child {
+	margin-bottom: 10px;
+}
+.section2 .sec2contactform input[type="text"], 
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+    padding: 18px;
+    border: 0;
+    background: #ffffff;
+    margin: 7px 0;
+}
+.section2 .sec2contactform textarea {
+	width: 100%;
+	display: block;
+	color: #6b6161;
+    resize:none;
+}
+.section2 .sec2contactform input[type="submit"] {
+	padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #f84600;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.section2 .sec2contactform h3 {
+	font-weight: normal;
+    margin: 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 19px;
+    color: #f84600;
+    font-family: 'Open Sans', sans-serif;
+}
+.sec2addr{
+    background-color: rgb(253, 207, 177);
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: underline;
+    width: 60%;
+}
+.iconos{
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+/* FOOTER */
+
+footer {
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 1px; /* Espaciado interno */
+    justify-content: center;
+    
+}
+.yo {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    transition: color 0.3s; /* Transición suave del color del enlace */
+}
+
+.yo:hover {
+    color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+}
+
+/* @media querries */
+
+@media only screen and (max-width: 550px) {
+	.abrir-menu{
+        display: block;
+        border:0px;
+        background-color: #ff5e00;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 1px 10px;
+        align-items: end;
+        color: #000000;
+        margin-left: 40px;
+    }
+    .cerrar-menu{
+        padding: 5px 20px;
+        display: block;
+        font-size: 30px;
+        border:0px;
+        background-color: #ff5e00;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 35px;
+        color: #000000;
+
+    }
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        border-radius: 15px;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(112, 107, 96, 0.5);
+        z-index: 2;
+    }
+    .menus{
+        background-color: #ff5f03; ;
+        border-radius: 8px;
+        padding: 5 5;
+    } 
+
+    .menu.visible{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list{
+        flex-direction: column;
+        align-items: start;
+        color: #fff;
+    }
+    .menu-list li a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #fff;
+        text-shadow:0 0 45px #000000;
+    }
+    
+    
+    * {
+        margin:0px;
+        padding:0px;
+    }
+    *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
+    
+    .clearfix:before, .clearfix:after { display: table; content: ''; }
+    .clearfix:after { clear: both; }
+    
+    input:focus, textarea:focus, keygen:focus, select:focus {
+        outline: none;
+    }
+    ::-moz-placeholder {
+        color: #666;
+        font-weight: 300;
+        opacity: 1;
+    }
+    
+    ::-webkit-input-placeholder {
+        color: #666;
+        font-weight: 300;
+    }
+    
+    
+    /* Contact Form Styling */
+    .container {
+        padding: 0 50px 70px;
+    }
+    .textcenter {
+        text-align: center;
+    }
+    .section1 {
+        text-align: center;
+        display: table;
+        width: 100%;
+    }
+    .section1 .shtext {
+        display: block;
+        margin-top: 20px;
+    }
+    .section1 .seperator {
+        border-bottom:1px solid #a2a2a2;
+        width: 35px;
+        display: inline-block;
+        margin: 20px;
+    }
+    
+    .section1 h1 {
+        font-size: 40px;
+        color: #ff5100;
+        font-weight: normal;
+    }
+    
+    .section2 {
+        width: 1200px;
+        margin: 25px auto;
+    }
+    .section2 .col2 {
+        width: 48.71%;
+    }
+    .section2 .col2.first {
+        float: left;
+    }
+    .section2 .col2.last {
+        float: right;
+    }
+    .section2 .col2.column2 {
+        padding: 0 30px;
+    }
+    .section2 span.collig {
+        color: #a2a2a2;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .section2 .sec2addr {
+        display: block;
+        line-height: 26px;
+    }
+    .section2 .sec2addr p:first-child {
+        margin-bottom: 10px;
+    }
+    .section2 .sec2contactform input[type="text"], 
+    .section2 .sec2contactform input[type="email"],
+    .section2 .sec2contactform textarea {
+        padding: 18px;
+        border: 0;
+        background: #EDEDED;
+        margin: 7px 0;
+    }
+    .section2 .sec2contactform textarea {
+        width: 100%;
+        display: block;
+        color: #666;
+        resize:none;
+    }
+    .section2 .sec2contactform input[type="submit"] {
+        padding: 15px 40px;
+        color: #fff;
+        border: 0;
+        background: #ff6600;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 7px 0;
+        cursor: pointer;
+    }
+    .section2 .sec2contactform h3 {
+        font-weight: normal;
+        margin: 20px 0;
+        margin-top: 30px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 19px;
+        color: #ff5e00;
+    }
+    .sec2addr{
+        background-color: rgb(253, 207, 177);
+        border-radius: 8px;
+        padding: 10px;
+        text-decoration: underline;
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    /* @media querries */
+    
+    @media only screen and (max-width: 1266px) {
+        .section2 {
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 960px) {
+        .container {
+            padding: 0 30px 70px;
+        }
+        .section2 .col2 {
+            width: 100%;
+            display: block;
+        }
+        .section2 .col2.first {
+            margin-bottom: 10px;
+        }
+        .section2 .col2.column2 {
+            padding: 0;
+        }
+        body .sec2map {
+            height: 250px !important;
+        }
+        footer {
+            margin-top: 90px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #333; /* Color de fondo del footer */
+            color: #fff; /* Color del texto */
+            padding: 15px; /* Espaciado interno */
+            justify-content: center;
+            
+        }
+        .yo {
+            color: #fff; /* Color del enlace */
+            text-decoration: none; /* Eliminar el subrayado del enlace */
+            transition: color 0.3s; /* Transición suave del color del enlace */
+        }
+        
+        .yo:hover {
+            color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+        }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .section2 .sec2addr {
+            font-size: 14px;
+        }
+        .section2 .sec2contactform h3 {
+            font-size: 16px;
+        }
+        .section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+            padding: 10px;
+            margin:3px 0;
+        }
+        .section2 .sec2contactform input[type="submit"] {
+            padding: 10px 30px;
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width: 420px) {
+        .section1 h1 {
+            font-size: 28px;
+        }	
+}

@@ -1,0 +1,528 @@
+/* MENU NAVEGACION */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(235, 189, 137, 0.356);
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #000000;
+}
+.logo{
+    max-width: 13rem;
+    justify-content: start;
+    cursor: pointer;
+}
+.abrir-menu,.cerrar-menu {
+    display: none;
+}
+.menu{
+    display: flex;
+    margin-left: 50px;
+}
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+    background-color: #000000; ;
+
+}
+.menu-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+
+}
+.menus{
+    background-color: #000000; ;
+    padding: 10px 10px;
+}
+.menus:hover{
+    background-color: rgb(255, 68, 0);
+    border-radius: 8px;
+    transition: .5s;
+}
+/*------------------------------------------------------------*/
+
+
+
+.nombre-departamento {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 80px;
+    color: #ff6a06;
+    text-decoration: underline;
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 7%; /* Location of the box */
+    left: 0%; /* Mueve el modal 10% hacia la derecha */
+    top: 0;
+    width: 100%; /* Ajusta el ancho para compensar el desplazamiento */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(243, 197, 167, 0.9); /* Black w/ opacity */
+}
+
+
+/* Estilos para el contenido del modal (imágenes) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%; /* Ajusta el ancho del contenido del modal */
+    max-width: 1000px;
+    border: 5px solid black; /* Añade un borde negro */
+}
+
+
+/* Contenedor para la imagen principal */
+.main-image-wrapper {
+    position: relative; /* Posicionamiento relativo para ubicar flechas */
+    margin-left: 2%;
+    margin-top: 1%;
+    display: flex; /* Para alinear flechas e imagen */
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente */
+    cursor: pointer;
+    margin-bottom: 124px;
+}
+
+/* Estilo para las flechas */
+.arrow-left, .arrow-right {
+    background: rgb(255, 255, 255); /* Fondo transparente */
+    border-radius: 10px;
+    font-size: 2em; /* Tamaño de fuente grande */
+    position: absolute;
+    cursor: pointer; /* Indica que es clickeable */
+    transition: opacity 0.3s; /* Suaviza la transición */
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.arrow-left {
+    left: 1%; /* Espaciado desde el borde izquierdo */
+}
+
+.arrow-right {
+    left: 750px; /* Espaciado desde el borde derecho */
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    opacity: 0.7; /* Mayor opacidad al pasar el cursor */
+}
+
+/*PRECIOS*/
+.precioxnoche{
+    font-size: 25px;
+    text-align: center;
+}
+.container {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Organiza elementos verticalmente */
+    gap: 20px; /* Espacio entre elementos en el contenedor */
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    padding-right: 3%;
+}
+table {
+    border-collapse: collapse;
+    width: 90%; /* Asegura que la tabla ocupe todo el ancho */
+}
+th, td {
+    padding: 15px; /* Ajusta el espacio interno de las celdas */
+    text-align: center; /* Centra el contenido */
+}
+th {
+    background: linear-gradient(to right, #f0a12a, #ff9100);
+    color: #fffcfa;
+}
+td {
+    background-color: rgb(253, 207, 177);
+    font-size: 20px;
+    color: #000000;
+}
+.container,.precioxnoche{
+    margin-bottom: 1%;
+}
+
+.texto-descripcion {
+    font-size: 20px; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Relleno para espacio interno */
+    margin: 0; /* Elimina márgenes para evitar conflictos */
+    background-color: #fdd9a2;
+    width: 88%; /* Asegura que la tabla ocupe todo el ancho */
+}
+
+.whatsapp {
+    width: 7%; /* Tamaño del icono */
+    cursor: pointer; /* Cursor de puntero */
+}
+.whatsapp-container {
+    display: flex; /* Flexbox para alinear elementos */
+    align-items: center; /* Alinea verticalmente en el centro */
+    position: absolute; /* Posición absoluta */
+    left: 48%; /* Ubicación a la derecha */
+    bottom: 10%; /* Ubicación en la parte inferior */
+}
+.whatsapp-container p {
+    margin-left: 15px; /* Separación entre el icono y el texto */
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    animation: pulse 1s infinite; /* Efecto de pulso mientras el mouse esté sobre el icono */
+}
+.escribinos {
+    font-size: 25px;
+    padding-right: 50px;
+}
+
+.llamanos {
+    width: 7%;
+    cursor: pointer;
+    margin-left: 7%;
+}
+.llamanos:hover {
+    animation: pulse 1s infinite; /* Efecto de pulso mientras el mouse esté sobre el icono */
+}
+.iconos{
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Escala normal */
+    }
+    50% {
+        transform: scale(1.5); /* Aumenta tamaño */
+    }
+    100% {
+        transform: scale(1); /* Vuelve a tamaño normal */
+    }
+}
+
+
+/* Estilos para el botón de cierre */
+.close {
+    position: absolute;
+    top: 4%; /* Posición del botón */
+    right: 25%;
+    color: #000000;
+    font-size: 80px; /* Tamaño grande */
+    font-weight: bold;
+    transition: 0.3s; /* Suaviza las animaciones */
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff; /* Cambia el color al pasar el cursor */
+    text-decoration: none;
+    cursor: pointer; /* Cursor en forma de mano */
+}
+
+/* Estilos para botones de navegación */
+#prevButton, #nextButton {
+    position: absolute;
+    top: 40%; /* Alineación vertical */
+    font-size: 90px;
+    color: #000000;
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: 0.3s; /* Transición suave */
+}
+
+#prevButton {
+    left: 20%; /* Posición del botón 'anterior' */
+}
+
+#nextButton {
+    right: 20%; /* Posición del botón 'siguiente' */
+}
+
+#prevButton:hover, #nextButton:hover {
+    color: #ffffff; /* Cambia el color al pasar el cursor */
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 90px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 1px; /* Espaciado interno */
+    justify-content: center;
+    
+}
+.yo {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    transition: color 0.3s; /* Transición suave del color del enlace */
+}
+
+.yo:hover {
+    color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+}
+
+@media screen and (max-width: 700px) { 
+    
+    .abrir-menu{
+        display: block;
+        border:0px;
+        background-color: #ff5e00;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 1px 10px;
+        align-items: end;
+        color: #000000;
+        margin-left: 40px;
+    }
+    .cerrar-menu{
+        padding: 5px 20px;
+        display: block;
+        font-size: 30px;
+        border:0px;
+        background-color: #ff5e00;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 35px;
+        color: #000000;
+
+    }
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        border-radius: 15px;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(112, 107, 96, 0.5);
+        z-index: 2;
+    }
+    .menus{
+        background-color: #ff5f03; ;
+        border-radius: 8px;
+        padding: 5 5;
+    } 
+
+    .menu.visible{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list{
+        flex-direction: column;
+        align-items: start;
+        color: #fff;
+    }
+    .menu-list li a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #fff;
+        text-shadow:0 0 45px #000000;
+    }
+
+.nombre-departamento{
+    font-size: 35px;
+}
+
+.container {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Organiza elementos verticalmente */
+    gap: 20px; /* Espacio entre elementos en el contenedor */
+    position: absolute;
+    left: 4%;
+    top: 25%;
+    margin-right: 5%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho */
+}
+th, td {
+    padding: 15px; /* Ajusta el espacio interno de las celdas */
+    text-align: center; /* Centra el contenido */
+}
+th {
+    background: linear-gradient(to right, #f0a12a, #ff9100);
+    color: #fffcfa;
+}
+td {
+    background-color: rgb(253, 207, 177);
+    font-size: 12px;
+    color: #000000;
+}
+.container,.precioxnoche{
+    margin-bottom: 1%;
+}
+.texto-descripcion {
+    font-size: 20px; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Relleno para espacio interno */
+    margin-left: 15px; /* Elimina márgenes para evitar conflictos */
+    background-color: #fdd9a2;
+    width: 88%; /* Asegura que la tabla ocupe todo el ancho */
+}
+
+.whatsapp {
+    width: 12%; /* Tamaño del icono */
+    cursor: pointer; /* Cursor de puntero */
+}
+.whatsapp-container {
+    display: flex; /* Flexbox para alinear elementos */
+    align-items: center; /* Alinea verticalmente en el centro */
+    position: absolute; /* Posición absoluta */
+    left: 0%; /* Ubicación a la derecha */
+    bottom: -1%; /* Ubicación en la parte inferior */
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.whatsapp-container p {
+    margin-left: 5px; /* Separación entre el icono y el texto */
+    background-color: #333;
+    padding: 5px;
+    border-radius: 8px;
+    color: #ccc;
+    cursor: pointer;
+}
+.escribinos{
+    font-size: 15px;
+}
+.llamanos {
+    width: 12%;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 70%; /* Location of the box */
+    width: 100%; /* Ajusta el ancho para compensar el desplazamiento */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(243, 197, 167, 0.9); /* Black w/ opacity */
+}
+
+
+/* Estilos para el contenido del modal (imágenes) */
+.modal-content {
+    display: block;
+    width: 100%; /* Ajusta el ancho del contenido del modal */
+    max-width: 300px;
+    border: 5px solid black; /* Añade un borde negro */
+}
+
+
+/* Contenedor para la imagen principal */
+.main-image-wrapper {
+    position: relative; /* Posicionamiento relativo para ubicar flechas */
+    margin-top: 750px;
+    margin-left: 15px;
+    width: 90%;
+    display: flex; /* Para alinear flechas e imagen */
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente */
+    cursor: pointer;
+}
+
+/* Estilo para las flechas */
+.arrow-left, .arrow-right {
+    background: rgb(255, 255, 255); /* Fondo transparente */
+    border-radius: 10px;
+    font-size: 1.5em; /* Tamaño de fuente grande */
+    position: absolute;
+    cursor: pointer; /* Indica que es clickeable */
+    transition: opacity 0.3s; /* Suaviza la transición */
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.arrow-left {
+    left: 2.5%; /* Espaciado desde el borde izquierdo */
+}
+
+.arrow-right {
+    left: 90%; /* Espaciado desde el borde derecho */
+}
+
+#prevButton, #nextButton {
+    position: absolute;
+    top: 49%; /* Alineación vertical */
+    font-size: 50px;
+    color: #000000;
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: 0.3s; /* Transición suave */
+}
+
+#prevButton {
+    left: 10%; /* Posición del botón 'anterior' */
+}
+
+#nextButton {
+    right: 10% /* Posición del botón 'siguiente' */
+}
+
+#prevButton:hover, #nextButton:hover {
+    color: rgb(0, 0, 0); /* Cambia el color al pasar el cursor */
+}
+
+.close {
+    position: absolute;
+    top: 15%; /* Posición del botón */
+    right: 35px;
+    color: #000000;
+    font-size: 50px; /* Tamaño grande */
+    font-weight: bold;
+    transition: 0.3s; /* Suaviza las animaciones */
+}
+footer {
+    margin-top: 90px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 15px; /* Espaciado interno */
+    justify-content: center;
+    
+}
+.yo {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    transition: color 0.3s; /* Transición suave del color del enlace */
+}
+
+.yo:hover {
+    color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+}
+}

@@ -1,0 +1,411 @@
+/* MENU NAVEGACION */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(235, 189, 137, 0.356);
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: #000000;
+}
+.logo{
+    max-width: 13rem;
+    justify-content: start;
+    margin-right: 10%;
+    cursor: pointer;
+}
+.abrir-menu,.cerrar-menu {
+    display: none;
+}
+.menu{
+    display: flex;
+    margin-left: 50px;
+}
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+    background-color: #000000; ;
+}
+.menu-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+.menus{
+    background-color: #000000; ;
+    padding: 10px 10px;
+}
+.menus:hover{
+    background-color: rgb(255, 68, 0);
+    border-radius: 8px;
+    transition: .5s;
+}
+/* FOTO PRINCIPAL Y INTRO */
+
+.banner {
+    background-image: url(Logos_iconos/prueba1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* Establecer el alto al 100% de la ventana de visualización */
+    margin: 0;
+    padding: 0;
+    position: relative; /* Establecer posición relativa para posicionar los elementos absolutos */
+    z-index: 1;
+}
+
+.titulo {
+    position: absolute; 
+    top: 10%; /* Ajustar la posición vertical del título */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    white-space: nowrap;
+    z-index: 2; /* Asegurar que el título esté sobre otros elementos */
+    color: #ff5e00; 
+    text-shadow: 0px 0px 7px black;
+    font-size: 4vw; /* Tamaño de fuente grande */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sentite {
+    position: absolute; 
+    top: 30%; /* Ajustar la posición vertical de "Sentite como en casa" */
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    z-index: 2; 
+    color: #ffffff; 
+    text-shadow: 0px 0px 7px black;
+    font-size: 2.5vw; /* Tamaño de fuente más pequeño */
+}
+
+.departamentos {
+    position: absolute; 
+    top: 45%; /* Ajustar la posición vertical de "Departamentos temporales" */
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    z-index: 2; 
+    color: #fff; 
+    text-shadow: 0px 0px 7px black;
+    font-size: 2vw; /* Tamaño de fuente aún más pequeño */
+    white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ver-departamentos {
+    position: absolute; 
+    top: 70%; /* Ajustar la posición vertical del botón */
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 15px 30px; /* Ajustar el tamaño del botón */
+    background-color: #201919; 
+    border: solid rgb(243, 201, 122); 
+    border-radius: 8px; 
+    color: #fff; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-size: 3vw; /* Tamaño de fuente del botón */
+    z-index: 2;
+}
+
+.ver-departamentos:hover {
+    background-color: #ff5e00; 
+    box-shadow: 0px 0px 40px black;
+}
+.texto_naranja {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+    text-align: center; /* Centra el texto horizontalmente */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    color: rgb(255, 94, 0);
+    text-decoration: underline;
+    padding: 0;
+    margin-top: 80px;
+}
+.buscas {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-align: center; /* Centra el texto horizontalmente */
+    max-width: 60%; /* Ancho máximo del contenedor */
+    margin: 5px auto; /* Centra el contenedor en la página */
+    margin-bottom: 70px; /* Añade espacio interno alrededor del contenido */
+}
+
+/* CUADROS DE ABAJO */
+
+.primer_cuadro {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del eje principal a vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin: 0px 200px auto; /* Margen automático para centrar los cuadros */
+    background-color: rgb(248, 217, 182);
+    max-width: calc(50% - 10px); /* Ancho máximo de cada cuadro (50% del contenedor menos el margen) */
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px black;
+    
+}
+.segundo_cuadro {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del eje principal a vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin: 70px 690px auto; /* Margen automático para centrar los cuadros */
+    background-color: rgb(248, 217, 182);
+    width: 100%; /* Los cuadros ocupan todo el ancho del contenedor */
+    max-width: calc(50% - 1px); /* Ancho máximo de cada cuadro (50% del contenedor menos el margen) */
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px black;
+}
+.primer_cuadro img,
+.segundo_cuadro img {
+    max-width: 48%; /* Reducir el tamaño de la imagen */
+    height: auto; /* Permite que la imagen mantenga su aspecto */
+}
+
+.primer_cuadro .contenido,
+.segundo_cuadro .contenido {
+    font-family: 'Open Sans', sans-serif;
+    display: flex; /* Cambia a flexbox para poder alinear el contenido */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-direction: row-reverse; /* Cambia la dirección del eje principal a horizontal y revierte el orden */
+    padding: 30px; /* Añade espacio interno al contenido */
+
+}
+
+.primer_cuadro .texto_cuadro, p {
+    font-size: 20px;
+    margin: 20px 10px; /* Añade margen vertical al texto */
+    text-align: left; /* Centra el texto */
+}
+
+.texto_cuadro,
+.segundo_cuadro p {
+    font-size: 20px;
+    margin: 20px 20px; /* Añade margen vertical al texto */
+    text-align: left; /* Centra el texto */
+
+}
+
+.texto_cuadro_naranja {
+    color: rgb(255, 94, 0);
+}
+h3 {
+    color: #000000;
+    letter-spacing: 2px;
+    margin: 15px;
+}
+
+
+.fijo_whsp{
+    width: 5%;
+    position:fixed;
+    bottom: 20%;
+    right: 5%;
+    z-index: 5;
+}
+.fijo_whsp:hover{
+    animation: pulse 1s;
+}
+
+.iconos{
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Escala normal */
+    }
+    50% {
+        transform: scale(1.5); /* Aumenta tamaño */
+    }
+    100% {
+        transform: scale(1); /* Vuelve a tamaño normal */
+    }
+}
+/* FOOTER */
+
+footer {
+    margin-top: 90px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 1px; /* Espaciado interno */
+    justify-content: center;
+    
+}
+.yo {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    transition: color 0.3s; /* Transición suave del color del enlace */
+}
+
+.yo:hover {
+    color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+}
+@keyframes aparecer {
+    from{
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 550px) { 
+    
+    .abrir-menu{
+        display: block;
+        border:0px;
+        background-color: #ff5e00;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 1px 10px;
+        align-items: end;
+        color: #000000;
+        margin-left: 40px;
+    }
+    .cerrar-menu{
+        padding: 5px 20px;
+        display: block;
+        font-size: 30px;
+        border:0px;
+        background-color: #ff5e00;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 35px;
+        color: #000000;
+
+    }
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        border-radius: 15px;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(112, 107, 96, 0.5);
+        z-index: 2;
+    }
+    .menus{
+        background-color: #ff5f03; ;
+        border-radius: 8px;
+        padding: 5 5;
+    } 
+
+    .menu.visible{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list{
+        flex-direction: column;
+        align-items: start;
+        color: #fff;
+    }
+    .menu-list li a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #fff;
+        text-shadow:0 0 45px #000000;
+    }
+    /*BANNER*/
+    .banner {
+        height: 450px;
+    }
+
+    .titulo {
+        font-size: 35px;
+    }
+    .sentite{
+        font-size: 28px;
+        max-width: 110%; /* Ajustar el ancho máximo del contenedor */
+        white-space: nowrap;
+    }
+    .departamentos {
+        font-size: 20px;
+        max-width: 100%; /* Ajustar el ancho máximo del contenedor */
+        margin: 20px auto; /* Centrar el contenedor en la página */
+        padding: 20px; /* Añadir espacio interno alrededor del contenido */
+    }
+    .boton-departamentos {
+        font-size: 25px;
+        white-space: nowrap;
+    }
+.fijo_whsp{
+    display: none;
+}
+
+    .texto_naranja {
+        font-size: 50px;
+    }
+
+    .buscas {
+        font-size: 20px;
+        max-width: 80%; /* Ajustar el ancho máximo del contenedor */
+        margin: 20px auto; /* Centrar el contenedor en la página */
+        padding: 20px; /* Añadir espacio interno alrededor del contenido */
+    }
+
+    .imagenes-muestra {
+        display: none;
+    }
+
+    .primer_cuadro,
+    .segundo_cuadro {
+        margin:20px auto; /* Margen automático para centrar los cuadros */
+        max-width: 90%;
+    }
+
+    .primer_cuadro img,
+    .segundo_cuadro img {
+        max-width: 80%; /* Reducir el tamaño de la imagen */
+    }
+
+    .primer_cuadro .contenido,
+    .segundo_cuadro .contenido {
+        flex-direction: column; /* Cambia la dirección del eje principal a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+        padding: 20px; /* Añade espacio interno al contenido */
+    }
+    .texto_cuadro{
+        text-align: center;
+    }
+
+    .primer_cuadro .texto_cuadro,
+    .segundo_cuadro p {
+        margin: 20px 0; /* Añade margen vertical al texto */
+        text-align: center; /* Centra el texto */
+    }
+    footer {
+        margin-top: 90px;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #333; /* Color de fondo del footer */
+        color: #fff; /* Color del texto */
+        padding: 15px; /* Espaciado interno */
+        justify-content: center;
+        
+    }
+    .yo {
+        color: #fff; /* Color del enlace */
+        text-decoration: none; /* Eliminar el subrayado del enlace */
+        transition: color 0.3s; /* Transición suave del color del enlace */
+    }
+    
+    .yo:hover {
+        color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+    }
+    }
+

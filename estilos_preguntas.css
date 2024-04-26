@@ -1,0 +1,181 @@
+/* MENU NAVEGACION */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(233, 134, 21, 0.356);
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #000000;
+}
+.logo{
+    max-width: 13rem;
+    justify-content: start;
+    margin-right: 10%;
+}
+.abrir-menu,.cerrar-menu {
+    display: none;
+}
+.menu{
+    display: flex;
+    margin-left: 50px;
+}
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+    background-color: #000000; ;
+}
+.menu-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px;
+}
+.menus{
+    background-color: #000000; ;
+    padding: 10px 10px;
+}
+.menus:hover{
+    background-color: rgb(255, 68, 0);
+    border-radius: 8px;
+    transition: .5s;
+}
+
+/*INDICE DE TODA LA PAGINA*/
+/*------------------------------------------------------------*/
+h1{
+    color: rgb(255, 104, 31);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 80px;
+} 
+details {
+    background-color: rgb(253, 188, 145);
+    padding: 15px;
+    margin: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.preguntas {
+    background-color: transparent;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+.respuestas {
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.iconos{
+    cursor: pointer;
+}
+/*------------------------------------------------------------*/
+footer {
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 1px; /* Espaciado interno */
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    
+}
+.yo {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    transition: color 0.3s; /* Transición suave del color del enlace */
+}
+
+.yo:hover {
+    color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+}
+/*------------------------------------------------------------*/
+@media screen and (max-width: 550px) { 
+    
+.abrir-menu{
+    display: block;
+    border:0px;
+    background-color: #ff5e00;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 1px 10px;
+    align-items: end;
+    color: #000000;
+    margin-left: 40px;
+}
+.cerrar-menu{
+    padding: 5px 20px;
+    display: block;
+    font-size: 30px;
+    border:0px;
+    background-color: #ff5e00;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 35px;
+    color: #000000;
+
+}
+.menu {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 0 0 100vmax rgba(112, 107, 96, 0.5);
+    z-index: 2;
+}
+.menus{
+    background-color: #ff5f03; ;
+    border-radius: 8px;
+    padding: 5 5;
+} 
+
+.menu.visible{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.menu-list{
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+}
+.menu-list li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-shadow:0 0 45px #000000;
+}
+footer {
+    margin-top: 90px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 15px; /* Espaciado interno */
+    justify-content: center;
+    
+}
+.yo {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    transition: color 0.3s; /* Transición suave del color del enlace */
+}
+
+.yo:hover {
+    color: #ff5e00; /* Cambiar color del enlace al pasar el mouse */
+}
+}
